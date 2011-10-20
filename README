@@ -1,0 +1,6 @@
+Hacking REST web services with jQuery
+
+In order to particpate in the internet of things it's important to understand the basic principals of REST based web services. 
+This overview will help you determine what skills are needed for these kinds of projects, and run through a basic example of getting information into Thingspeak.com  and Pachube.com.
+This class will serve as an introduction to REST based web services, and students will interact with them
+using Javascript, jQuery, and proxy servers. This class will use cloud9ide, and use node.js for proxy services. 
