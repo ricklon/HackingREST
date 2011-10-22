@@ -12,6 +12,7 @@ app.get('/', function(req, res){
     + '<li>REST examples<a href="/REST/missing.txt">REST Examplest</a>.</li>'
     + '</ul>');
 });    
+app.listen(8888, "127.0.0.1");
 
-app.listen(process.env.C9_PORT, "0.0.0.0");
-console.log('Class app erver running on port: ' + process.env.C9_PORT);
+//app.listen(process.env.C9_PORT, "0.0.0.0");
+//console.log('Class app erver running on port: ' + process.env.C9_PORT);
