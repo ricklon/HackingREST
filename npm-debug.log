@@ -2,15 +2,150 @@ info it worked if it ends with ok
 verbose cli [ '/home/cloud9/c9/support/node-c9-builds-v4/node-c9-sunos',
 verbose cli   '/home/ide_ricklon/workspaces/npm/bin/npm.js',
 verbose cli   'install',
-verbose cli   'jsdom' ]
+verbose cli   'jquery' ]
 info using npm@1.0.1rc6
 info using node@v0.4.5
 verbose config file /home/cloud9/.npmrc
 verbose config file /home/cloud9/c9/support/etc/npmrc
-info into /mnt/ws/users/ricklon/91725 [ 'jsdom' ]
-verbose cache add [ 'jsdom', null ]
-info addNamed [ 'jsdom', '' ]
+info into /mnt/ws/users/ricklon/91725 [ 'jquery' ]
+verbose cache add [ 'jquery', null ]
+info addNamed [ 'jquery', '' ]
 verbose addNamed [ null, '' ]
+verbose GET jquery
+verbose raw, before any munging jquery
+verbose url resolving [ 'http://registry.npmjs.org/', './jquery' ]
+verbose url resolved http://registry.npmjs.org/jquery
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   pathname: '/jquery',
+verbose url parsed   href: 'http://registry.npmjs.org/jquery' }
+verbose etag "DJ556PJNG9RTIBI2BL91PMIAU"
+verbose response http://registry.npmjs.org/jquery
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"DJ556PJNG9RTIBI2BL91PMIAU"',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:56 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jquery from cache
+verbose GET jquery/1.6.3
+verbose raw, before any munging jquery/1.6.3
+verbose url resolving [ 'http://registry.npmjs.org/', './jquery/1.6.3' ]
+verbose url resolved http://registry.npmjs.org/jquery/1.6.3
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   pathname: '/jquery/1.6.3',
+verbose url parsed   href: 'http://registry.npmjs.org/jquery/1.6.3' }
+verbose etag "DJ556PJNG9RTIBI2BL91PMIAU"
+verbose response http://registry.npmjs.org/jquery/1.6.3
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"DJ556PJNG9RTIBI2BL91PMIAU"',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:56 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jquery/1.6.3 from cache
+verbose bin dist [ '0.4-sunos-5.11',
+verbose bin dist   { shasum: 'e1f732fa7e718a6adb3ec20ae0eb2a64fd95ef01',
+verbose bin dist     tarball: 'http://registry.npmjs.org/jquery/-/jquery-1.6.3.tgz' } ]
+silly resolved [ { name: 'jquery',
+silly resolved     description: 'jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)',
+silly resolved     url: 'http://jquery.com',
+silly resolved     keywords: [ 'util', 'dom', 'jquery' ],
+silly resolved     author: { name: 'John Resig', email: 'jeresig@gmail.com' },
+silly resolved     contributors: [],
+silly resolved     dependencies: { jsdom: '>=0.2.0', htmlparser: '>= 1.7.3' },
+silly resolved     lib: '.',
+silly resolved     main: './node-jquery.js',
+silly resolved     version: '1.6.3',
+silly resolved     _npmJsonOpts: 
+silly resolved      { file: '/Users/coolaj86/.npm/jquery/1.6.3/package/package.json',
+silly resolved        wscript: false,
+silly resolved        contributors: false,
+silly resolved        serverjs: false },
+silly resolved     _id: 'jquery@1.6.3',
+silly resolved     devDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.22',
+silly resolved     _nodeVersion: 'v0.4.8',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: 
+silly resolved      { shasum: 'e1f732fa7e718a6adb3ec20ae0eb2a64fd95ef01',
+silly resolved        tarball: 'http://registry.npmjs.org/jquery/-/jquery-1.6.3.tgz' },
+silly resolved     scripts: {},
+silly resolved     maintainers: [ { name: 'coolaj86', email: 'coolaj86@gmail.com' } ],
+silly resolved     directories: {} } ]
+info (resolved) into /mnt/ws/users/ricklon/91725 [ 'jquery@1.6.3' ]
+info installOne jquery@1.6.3
+silly testEngine { name: 'jquery',
+silly testEngine   description: 'jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)',
+silly testEngine   url: 'http://jquery.com',
+silly testEngine   keywords: [ 'util', 'dom', 'jquery' ],
+silly testEngine   author: { name: 'John Resig', email: 'jeresig@gmail.com' },
+silly testEngine   contributors: [],
+silly testEngine   dependencies: { jsdom: '>=0.2.0', htmlparser: '>= 1.7.3' },
+silly testEngine   lib: '.',
+silly testEngine   main: './node-jquery.js',
+silly testEngine   version: '1.6.3',
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'jquery@1.6.3',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.1rc6',
+silly testEngine   _nodeVersion: 'v0.4.5',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: { shasum: '8e963497d83414c5c7d5a3e38644b9747116786c' } }
+verbose caching /home/ide_ricklon/workspaces/npm_cache/jquery/1.6.3/package.json
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/___jquery.npm
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery
+verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/jquery/1.6.3/package.tgz"
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/___jquery.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/___jquery.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/___jquery.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery' ]
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/___jquery.npm
+silly testEngine { name: 'jquery',
+silly testEngine   description: 'jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)',
+silly testEngine   url: 'http://jquery.com',
+silly testEngine   keywords: [ 'util', 'dom', 'jquery' ],
+silly testEngine   author: { name: 'John Resig', email: 'jeresig@gmail.com' },
+silly testEngine   contributors: [],
+silly testEngine   dependencies: { jsdom: '>=0.2.0', htmlparser: '>= 1.7.3' },
+silly testEngine   lib: '.',
+silly testEngine   main: './node-jquery.js',
+silly testEngine   version: '1.6.3',
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'jquery@1.6.3',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.1rc6',
+silly testEngine   _nodeVersion: 'v0.4.5',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /mnt/ws/users/ricklon/91725/node_modules/jquery/package.json
+verbose loadDefaults jquery@1.6.3
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery [ 'jsdom@>=0.2.0', 'htmlparser@>= 1.7.3' ]
+verbose cache add [ 'htmlparser@>= 1.7.3', null ]
+info addNamed [ 'htmlparser', '>= 1.7.3' ]
+verbose addNamed [ null, '>=1.7.3' ]
+verbose cache add [ 'jsdom@>=0.2.0', null ]
+info addNamed [ 'jsdom', '>=0.2.0' ]
+verbose addNamed [ null, '>=0.2.0' ]
+verbose GET htmlparser
+verbose raw, before any munging htmlparser
+verbose url resolving [ 'http://registry.npmjs.org/', './htmlparser' ]
+verbose url resolved http://registry.npmjs.org/htmlparser
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   pathname: '/htmlparser',
+verbose url parsed   href: 'http://registry.npmjs.org/htmlparser' }
+verbose etag "D6IPSG93465GMAPMDJNSC837R"
 verbose GET jsdom
 verbose raw, before any munging jsdom
 verbose url resolving [ 'http://registry.npmjs.org/', './jsdom' ]
@@ -22,11 +157,29 @@ verbose url parsed   hostname: 'registry.npmjs.org',
 verbose url parsed   pathname: '/jsdom',
 verbose url parsed   href: 'http://registry.npmjs.org/jsdom' }
 verbose etag "1UTP980R33H0CRQB6PJ8RYPVL"
+verbose response http://registry.npmjs.org/htmlparser
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"D6IPSG93465GMAPMDJNSC837R"',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:57 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag htmlparser from cache
+verbose GET htmlparser/1.7.3
+verbose raw, before any munging htmlparser/1.7.3
+verbose url resolving [ 'http://registry.npmjs.org/', './htmlparser/1.7.3' ]
+verbose url resolved http://registry.npmjs.org/htmlparser/1.7.3
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   pathname: '/htmlparser/1.7.3',
+verbose url parsed   href: 'http://registry.npmjs.org/htmlparser/1.7.3' }
+verbose etag "D6IPSG93465GMAPMDJNSC837R"
 verbose response http://registry.npmjs.org/jsdom
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"1UTP980R33H0CRQB6PJ8RYPVL"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:20 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:57 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag jsdom from cache
 verbose GET jsdom/0.2.8
@@ -40,17 +193,54 @@ verbose url parsed   hostname: 'registry.npmjs.org',
 verbose url parsed   pathname: '/jsdom/0.2.8',
 verbose url parsed   href: 'http://registry.npmjs.org/jsdom/0.2.8' }
 verbose etag "1UTP980R33H0CRQB6PJ8RYPVL"
+verbose response http://registry.npmjs.org/htmlparser/1.7.3
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"D6IPSG93465GMAPMDJNSC837R"',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:57 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag htmlparser/1.7.3 from cache
+verbose bin dist [ '0.4-sunos-5.11',
+verbose bin dist   { shasum: '67a98b21aeabbf2a8703bbdd4debe30f80f33217',
+verbose bin dist     tarball: 'http://registry.npmjs.org/htmlparser/-/htmlparser-1.7.3.tgz' } ]
 verbose response http://registry.npmjs.org/jsdom/0.2.8
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"1UTP980R33H0CRQB6PJ8RYPVL"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:20 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:57 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag jsdom/0.2.8 from cache
 verbose bin dist [ '0.4-sunos-5.11',
 verbose bin dist   { shasum: '76d9627fe0567f8a9c125d3c88ff476a2f71152c',
 verbose bin dist     tarball: 'http://registry.npmjs.org/jsdom/-/jsdom-0.2.8.tgz' } ]
-silly resolved [ { name: 'jsdom',
+silly resolved [ { name: 'htmlparser',
+silly resolved     description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
+silly resolved     version: '1.7.3',
+silly resolved     author: 
+silly resolved      { name: 'Chris Winberry',
+silly resolved        email: 'chris@winberry.net' },
+silly resolved     contributors: [],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/tautologistics/node-htmlparser.git' },
+silly resolved     bugs: 
+silly resolved      { email: 'chris@winberry.net',
+silly resolved        url: 'http://github.com/tautologistics/node-htmlparser/issues' },
+silly resolved     os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
+silly resolved     directories: { lib: './lib/' },
+silly resolved     main: './lib/htmlparser',
+silly resolved     engines: { node: '>=0.1.33' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
+silly resolved     _id: 'htmlparser@1.7.3',
+silly resolved     _nodeSupported: true,
+silly resolved     _npmVersion: '0.2.11',
+silly resolved     _nodeVersion: 'v0.3.1',
+silly resolved     dist: 
+silly resolved      { shasum: '67a98b21aeabbf2a8703bbdd4debe30f80f33217',
+silly resolved        tarball: 'http://registry.npmjs.org/htmlparser/-/htmlparser-1.7.3.tgz' } },
+silly resolved   { name: 'jsdom',
 silly resolved     version: '0.2.8',
 silly resolved     description: 'A javascript implementation of the W3C DOM',
 silly resolved     keywords: [ 'dom', 'w3c', 'javascript' ],
@@ -141,7 +331,8 @@ silly resolved     dist:
 silly resolved      { shasum: '76d9627fe0567f8a9c125d3c88ff476a2f71152c',
 silly resolved        tarball: 'http://registry.npmjs.org/jsdom/-/jsdom-0.2.8.tgz' },
 silly resolved     scripts: {} } ]
-info (resolved) into /mnt/ws/users/ricklon/91725 [ 'jsdom@0.2.8' ]
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery [ 'htmlparser@1.7.3', 'jsdom@0.2.8' ]
+info installOne htmlparser@1.7.3
 info installOne jsdom@0.2.8
 silly testEngine { name: 'jsdom',
 silly testEngine   version: '0.2.8',
@@ -230,16 +421,109 @@ silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true,
 silly testEngine   dist: { shasum: '54a2e62e75e6dbf7cd897ae02f068baf6b2104c6' } }
 verbose caching /home/ide_ricklon/workspaces/npm_cache/jsdom/0.2.8/package.json
-verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/___jsdom.npm
+silly testEngine { name: 'htmlparser',
+silly testEngine   description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
+silly testEngine   version: '1.7.3',
+silly testEngine   author: 
+silly testEngine    { name: 'Chris Winberry',
+silly testEngine      email: 'chris@winberry.net' },
+silly testEngine   contributors: [],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/tautologistics/node-htmlparser.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'chris@winberry.net',
+silly testEngine      url: 'http://github.com/tautologistics/node-htmlparser/issues' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
+silly testEngine   directories: { lib: './lib/' },
+silly testEngine   main: './lib/htmlparser',
+silly testEngine   engines: { node: '>=0.1.33' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'htmlparser@1.7.3',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.1rc6',
+silly testEngine   _nodeVersion: 'v0.4.5',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: { shasum: '04f7115a5764a5554cfa425d0c7c03a27d0f44f7' } }
+verbose caching /home/ide_ricklon/workspaces/npm_cache/htmlparser/1.7.3/package.json
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___jsdom.npm
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___htmlparser.npm
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jsdom
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser
+verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/htmlparser/1.7.3/package.tgz"
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___htmlparser.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___htmlparser.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___htmlparser.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser' ]
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___htmlparser.npm
+silly testEngine { name: 'htmlparser',
+silly testEngine   description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
+silly testEngine   version: '1.7.3',
+silly testEngine   author: 
+silly testEngine    { name: 'Chris Winberry',
+silly testEngine      email: 'chris@winberry.net' },
+silly testEngine   contributors: [],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/tautologistics/node-htmlparser.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'chris@winberry.net',
+silly testEngine      url: 'http://github.com/tautologistics/node-htmlparser/issues' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
+silly testEngine   directories: { lib: './lib/' },
+silly testEngine   main: './lib/htmlparser',
+silly testEngine   engines: { node: '>=0.1.33' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'htmlparser@1.7.3',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.1rc6',
+silly testEngine   _nodeVersion: 'v0.4.5',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser/package.json
+verbose loadDefaults htmlparser@1.7.3
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser []
+silly resolved []
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser []
+verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser
+info build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser
+verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/htmlparser/package.json
+info preinstall htmlparser@1.7.3
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules' ]
+info linkStuff htmlparser@1.7.3
+info linkBins htmlparser@1.7.3
+info linkMans htmlparser@1.7.3
+info rebuildBundles htmlparser@1.7.3
+verbose rebuildBundles [ { stack: [Getter/Setter],
+verbose rebuildBundles     arguments: undefined,
+verbose rebuildBundles     type: undefined,
+verbose rebuildBundles     message: 'ENOENT, No such file or directory',
+verbose rebuildBundles     errno: 2,
+verbose rebuildBundles     code: 'ENOENT' },
+verbose rebuildBundles   undefined ]
+info install htmlparser@1.7.3
+info postinstall htmlparser@1.7.3
+info installOne cb htmlparser@1.7.3
 verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/jsdom/0.2.8/package.tgz"
-verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/___jsdom.npm"
-verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/___jsdom.npm/package
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom
-verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/___jsdom.npm/package',
-verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jsdom' ]
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/___jsdom.npm
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___jsdom.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___jsdom.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___jsdom.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom' ]
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/___jsdom.npm
 silly testEngine { name: 'jsdom',
 silly testEngine   version: '0.2.8',
 silly testEngine   description: 'A javascript implementation of the W3C DOM',
@@ -325,12 +609,12 @@ silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.1rc6',
 silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true }
-verbose caching /mnt/ws/users/ricklon/91725/node_modules/jsdom/package.json
+verbose caching /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/package.json
 verbose loadDefaults jsdom@0.2.8
-info into /mnt/ws/users/ricklon/91725/node_modules/jsdom [ 'htmlparser@>=1.7.0',
-info into /mnt/ws/users/ricklon/91725/node_modules/jsdom   'request@>=1.0.0',
-info into /mnt/ws/users/ricklon/91725/node_modules/jsdom   'cssom@>=0.2.0',
-info into /mnt/ws/users/ricklon/91725/node_modules/jsdom   'contextify@>=0.0.3' ]
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom [ 'htmlparser@>=1.7.0',
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom   'request@>=1.0.0',
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom   'cssom@>=0.2.0',
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom   'contextify@>=0.0.3' ]
 verbose cache add [ 'request@>=1.0.0', null ]
 info addNamed [ 'request', '>=1.0.0' ]
 verbose addNamed [ null, '>=1.0.0' ]
@@ -343,17 +627,6 @@ verbose addNamed [ null, '>=0.0.3' ]
 verbose cache add [ 'htmlparser@>=1.7.0', null ]
 info addNamed [ 'htmlparser', '>=1.7.0' ]
 verbose addNamed [ null, '>=1.7.0' ]
-verbose GET request
-verbose raw, before any munging request
-verbose url resolving [ 'http://registry.npmjs.org/', './request' ]
-verbose url resolved http://registry.npmjs.org/request
-verbose url parsed { protocol: 'http:',
-verbose url parsed   slashes: true,
-verbose url parsed   host: 'registry.npmjs.org',
-verbose url parsed   hostname: 'registry.npmjs.org',
-verbose url parsed   pathname: '/request',
-verbose url parsed   href: 'http://registry.npmjs.org/request' }
-verbose etag "CESHFLQPUVKYZ1XW6UT3KTXWJ"
 verbose GET htmlparser
 verbose raw, before any munging htmlparser
 verbose url resolving [ 'http://registry.npmjs.org/', './htmlparser' ]
@@ -365,6 +638,17 @@ verbose url parsed   hostname: 'registry.npmjs.org',
 verbose url parsed   pathname: '/htmlparser',
 verbose url parsed   href: 'http://registry.npmjs.org/htmlparser' }
 verbose etag "D6IPSG93465GMAPMDJNSC837R"
+verbose GET request
+verbose raw, before any munging request
+verbose url resolving [ 'http://registry.npmjs.org/', './request' ]
+verbose url resolved http://registry.npmjs.org/request
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   pathname: '/request',
+verbose url parsed   href: 'http://registry.npmjs.org/request' }
+verbose etag "CESHFLQPUVKYZ1XW6UT3KTXWJ"
 verbose GET cssom
 verbose raw, before any munging cssom
 verbose url resolving [ 'http://registry.npmjs.org/', './cssom' ]
@@ -387,29 +671,11 @@ verbose url parsed   hostname: 'registry.npmjs.org',
 verbose url parsed   pathname: '/contextify',
 verbose url parsed   href: 'http://registry.npmjs.org/contextify' }
 verbose etag "8VQXZMXS50BFUSXTTA86MXDYT"
-verbose response http://registry.npmjs.org/request
-silly get cb [ 304,
-silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
-silly get cb     etag: '"CESHFLQPUVKYZ1XW6UT3KTXWJ"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
-silly get cb     'content-length': '0' } ]
-verbose etag request from cache
-verbose GET request/2.1.1
-verbose raw, before any munging request/2.1.1
-verbose url resolving [ 'http://registry.npmjs.org/', './request/2.1.1' ]
-verbose url resolved http://registry.npmjs.org/request/2.1.1
-verbose url parsed { protocol: 'http:',
-verbose url parsed   slashes: true,
-verbose url parsed   host: 'registry.npmjs.org',
-verbose url parsed   hostname: 'registry.npmjs.org',
-verbose url parsed   pathname: '/request/2.1.1',
-verbose url parsed   href: 'http://registry.npmjs.org/request/2.1.1' }
-verbose etag "CESHFLQPUVKYZ1XW6UT3KTXWJ"
 verbose response http://registry.npmjs.org/htmlparser
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"D6IPSG93465GMAPMDJNSC837R"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag htmlparser from cache
 verbose GET htmlparser/1.7.3
@@ -423,13 +689,31 @@ verbose url parsed   hostname: 'registry.npmjs.org',
 verbose url parsed   pathname: '/htmlparser/1.7.3',
 verbose url parsed   href: 'http://registry.npmjs.org/htmlparser/1.7.3' }
 verbose etag "D6IPSG93465GMAPMDJNSC837R"
+verbose response http://registry.npmjs.org/request
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"CESHFLQPUVKYZ1XW6UT3KTXWJ"',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag request from cache
 verbose response http://registry.npmjs.org/cssom
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"48BUOD20CZYWTG9I9PD028ZUC"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag cssom from cache
+verbose GET request/2.1.1
+verbose raw, before any munging request/2.1.1
+verbose url resolving [ 'http://registry.npmjs.org/', './request/2.1.1' ]
+verbose url resolved http://registry.npmjs.org/request/2.1.1
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   pathname: '/request/2.1.1',
+verbose url parsed   href: 'http://registry.npmjs.org/request/2.1.1' }
+verbose etag "CESHFLQPUVKYZ1XW6UT3KTXWJ"
 verbose GET cssom/0.2.0
 verbose raw, before any munging cssom/0.2.0
 verbose url resolving [ 'http://registry.npmjs.org/', './cssom/0.2.0' ]
@@ -445,7 +729,7 @@ verbose response http://registry.npmjs.org/contextify
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"8VQXZMXS50BFUSXTTA86MXDYT"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag contextify from cache
 verbose GET contextify/0.0.6
@@ -459,31 +743,31 @@ verbose url parsed   hostname: 'registry.npmjs.org',
 verbose url parsed   pathname: '/contextify/0.0.6',
 verbose url parsed   href: 'http://registry.npmjs.org/contextify/0.0.6' }
 verbose etag "8VQXZMXS50BFUSXTTA86MXDYT"
-verbose response http://registry.npmjs.org/request/2.1.1
-silly get cb [ 304,
-silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
-silly get cb     etag: '"CESHFLQPUVKYZ1XW6UT3KTXWJ"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
-silly get cb     'content-length': '0' } ]
-verbose etag request/2.1.1 from cache
-verbose bin dist [ '0.4-sunos-5.11',
-verbose bin dist   { shasum: '5570e0c737d656ebd6d1d3c80aa510d3cf86c6fa',
-verbose bin dist     tarball: 'http://registry.npmjs.org/request/-/request-2.1.1.tgz' } ]
 verbose response http://registry.npmjs.org/htmlparser/1.7.3
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"D6IPSG93465GMAPMDJNSC837R"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag htmlparser/1.7.3 from cache
 verbose bin dist [ '0.4-sunos-5.11',
 verbose bin dist   { shasum: '67a98b21aeabbf2a8703bbdd4debe30f80f33217',
 verbose bin dist     tarball: 'http://registry.npmjs.org/htmlparser/-/htmlparser-1.7.3.tgz' } ]
+verbose response http://registry.npmjs.org/request/2.1.1
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"CESHFLQPUVKYZ1XW6UT3KTXWJ"',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag request/2.1.1 from cache
+verbose bin dist [ '0.4-sunos-5.11',
+verbose bin dist   { shasum: '5570e0c737d656ebd6d1d3c80aa510d3cf86c6fa',
+verbose bin dist     tarball: 'http://registry.npmjs.org/request/-/request-2.1.1.tgz' } ]
 verbose response http://registry.npmjs.org/cssom/0.2.0
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"48BUOD20CZYWTG9I9PD028ZUC"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag cssom/0.2.0 from cache
 verbose bin dist [ '0.4-sunos-5.11',
@@ -493,13 +777,40 @@ verbose response http://registry.npmjs.org/contextify/0.0.6
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
 silly get cb     etag: '"8VQXZMXS50BFUSXTTA86MXDYT"',
-silly get cb     date: 'Sat, 22 Oct 2011 18:20:22 GMT',
+silly get cb     date: 'Sat, 22 Oct 2011 19:18:59 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag contextify/0.0.6 from cache
 verbose bin dist [ '0.4-sunos-5.11',
 verbose bin dist   { shasum: '1d373103c9000b93812783b8e1d1e1889b4a73de',
 verbose bin dist     tarball: 'http://registry.npmjs.org/contextify/-/contextify-0.0.6.tgz' } ]
-silly resolved [ { name: 'request',
+silly resolved [ { name: 'htmlparser',
+silly resolved     description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
+silly resolved     version: '1.7.3',
+silly resolved     author: 
+silly resolved      { name: 'Chris Winberry',
+silly resolved        email: 'chris@winberry.net' },
+silly resolved     contributors: [],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/tautologistics/node-htmlparser.git' },
+silly resolved     bugs: 
+silly resolved      { email: 'chris@winberry.net',
+silly resolved        url: 'http://github.com/tautologistics/node-htmlparser/issues' },
+silly resolved     os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
+silly resolved     directories: { lib: './lib/' },
+silly resolved     main: './lib/htmlparser',
+silly resolved     engines: { node: '>=0.1.33' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
+silly resolved     _id: 'htmlparser@1.7.3',
+silly resolved     _nodeSupported: true,
+silly resolved     _npmVersion: '0.2.11',
+silly resolved     _nodeVersion: 'v0.3.1',
+silly resolved     dist: 
+silly resolved      { shasum: '67a98b21aeabbf2a8703bbdd4debe30f80f33217',
+silly resolved        tarball: 'http://registry.npmjs.org/htmlparser/-/htmlparser-1.7.3.tgz' } },
+silly resolved   { name: 'request',
 silly resolved     description: 'Simplified HTTP request client.',
 silly resolved     tags: [ 'http', 'simple', 'util', 'utility' ],
 silly resolved     version: '2.1.1',
@@ -530,33 +841,6 @@ silly resolved        tarball: 'http://registry.npmjs.org/request/-/request-2.1.
 silly resolved     scripts: {},
 silly resolved     maintainers: [ { name: 'mikeal', email: 'mikeal.rogers@gmail.com' } ],
 silly resolved     directories: {} },
-silly resolved   { name: 'htmlparser',
-silly resolved     description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
-silly resolved     version: '1.7.3',
-silly resolved     author: 
-silly resolved      { name: 'Chris Winberry',
-silly resolved        email: 'chris@winberry.net' },
-silly resolved     contributors: [],
-silly resolved     repository: 
-silly resolved      { type: 'git',
-silly resolved        url: 'git://github.com/tautologistics/node-htmlparser.git' },
-silly resolved     bugs: 
-silly resolved      { email: 'chris@winberry.net',
-silly resolved        url: 'http://github.com/tautologistics/node-htmlparser/issues' },
-silly resolved     os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
-silly resolved     directories: { lib: './lib/' },
-silly resolved     main: './lib/htmlparser',
-silly resolved     engines: { node: '>=0.1.33' },
-silly resolved     licenses: 
-silly resolved      [ { type: 'MIT',
-silly resolved          url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
-silly resolved     _id: 'htmlparser@1.7.3',
-silly resolved     _nodeSupported: true,
-silly resolved     _npmVersion: '0.2.11',
-silly resolved     _nodeVersion: 'v0.3.1',
-silly resolved     dist: 
-silly resolved      { shasum: '67a98b21aeabbf2a8703bbdd4debe30f80f33217',
-silly resolved        tarball: 'http://registry.npmjs.org/htmlparser/-/htmlparser-1.7.3.tgz' } },
 silly resolved   { name: 'cssom',
 silly resolved     description: 'CSS Object Model implementation and CSS parser',
 silly resolved     keywords: [ 'CSS', 'CSSOM', 'parser', 'styleSheet' ],
@@ -611,43 +895,36 @@ silly resolved     dist:
 silly resolved      { shasum: '1d373103c9000b93812783b8e1d1e1889b4a73de',
 silly resolved        tarball: 'http://registry.npmjs.org/contextify/-/contextify-0.0.6.tgz' },
 silly resolved     maintainers: [ { name: 'brianmcd', email: 'brianmcd05@gmail.com' } ] } ]
-info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jsdom [ 'request@2.1.1',
-info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jsdom   'htmlparser@1.7.3',
-info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jsdom   'cssom@0.2.0',
-info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jsdom   'contextify@0.0.6' ]
-info installOne request@2.1.1
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom [ 'htmlparser@1.7.3',
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom   'request@2.1.1',
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom   'cssom@0.2.0',
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom   'contextify@0.0.6' ]
 info installOne htmlparser@1.7.3
+info installOne request@2.1.1
 info installOne cssom@0.2.0
 info installOne contextify@0.0.6
-silly testEngine { name: 'htmlparser',
-silly testEngine   description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
-silly testEngine   version: '1.7.3',
+silly testEngine { name: 'request',
+silly testEngine   description: 'Simplified HTTP request client.',
+silly testEngine   tags: [ 'http', 'simple', 'util', 'utility' ],
+silly testEngine   version: '2.1.1',
 silly testEngine   author: 
-silly testEngine    { name: 'Chris Winberry',
-silly testEngine      email: 'chris@winberry.net' },
-silly testEngine   contributors: [],
+silly testEngine    { name: 'Mikeal Rogers',
+silly testEngine      email: 'mikeal.rogers@gmail.com' },
 silly testEngine   repository: 
 silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/tautologistics/node-htmlparser.git' },
-silly testEngine   bugs: 
-silly testEngine    { email: 'chris@winberry.net',
-silly testEngine      url: 'http://github.com/tautologistics/node-htmlparser/issues' },
-silly testEngine   os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
-silly testEngine   directories: { lib: './lib/' },
-silly testEngine   main: './lib/htmlparser',
-silly testEngine   engines: { node: '>=0.1.33' },
-silly testEngine   licenses: 
-silly testEngine    [ { type: 'MIT',
-silly testEngine        url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
+silly testEngine      url: 'git://github.com/mikeal/request.git' },
+silly testEngine   bugs: { url: 'http://github.com/mikeal/request/issues' },
+silly testEngine   engines: [ 'node >= 0.3.6', node: ' >= 0.3.6' ],
+silly testEngine   main: './main',
 silly testEngine   dependencies: {},
 silly testEngine   devDependencies: {},
-silly testEngine   _id: 'htmlparser@1.7.3',
+silly testEngine   _id: 'request@2.1.1',
 silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.1rc6',
 silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true,
-silly testEngine   dist: { shasum: '04f7115a5764a5554cfa425d0c7c03a27d0f44f7' } }
-verbose caching /home/ide_ricklon/workspaces/npm_cache/htmlparser/1.7.3/package.json
+silly testEngine   dist: { shasum: '1d994ce47c5ab0f7890b314e8fb640ba4b219cd5' } }
+verbose caching /home/ide_ricklon/workspaces/npm_cache/request/2.1.1/package.json
 silly testEngine { name: 'cssom',
 silly testEngine   description: 'CSS Object Model implementation and CSS parser',
 silly testEngine   keywords: [ 'CSS', 'CSSOM', 'parser', 'styleSheet' ],
@@ -671,28 +948,6 @@ silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true,
 silly testEngine   dist: { shasum: '06584fae3179dabb38996fb1854c352b3e35f859' } }
 verbose caching /home/ide_ricklon/workspaces/npm_cache/cssom/0.2.0/package.json
-silly testEngine { name: 'request',
-silly testEngine   description: 'Simplified HTTP request client.',
-silly testEngine   tags: [ 'http', 'simple', 'util', 'utility' ],
-silly testEngine   version: '2.1.1',
-silly testEngine   author: 
-silly testEngine    { name: 'Mikeal Rogers',
-silly testEngine      email: 'mikeal.rogers@gmail.com' },
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/mikeal/request.git' },
-silly testEngine   bugs: { url: 'http://github.com/mikeal/request/issues' },
-silly testEngine   engines: [ 'node >= 0.3.6', node: ' >= 0.3.6' ],
-silly testEngine   main: './main',
-silly testEngine   dependencies: {},
-silly testEngine   devDependencies: {},
-silly testEngine   _id: 'request@2.1.1',
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.1rc6',
-silly testEngine   _nodeVersion: 'v0.4.5',
-silly testEngine   _defaultsLoaded: true,
-silly testEngine   dist: { shasum: '1d994ce47c5ab0f7890b314e8fb640ba4b219cd5' } }
-verbose caching /home/ide_ricklon/workspaces/npm_cache/request/2.1.1/package.json
 silly testEngine { author: 
 silly testEngine    { name: 'Brian McDaniel',
 silly testEngine      email: 'brianmcd05@gmail.com' },
@@ -719,29 +974,33 @@ silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true,
 silly testEngine   dist: { shasum: 'ac5e7b36f4d431894d630bf2ccd804d5fd9fbf20' } }
 verbose caching /home/ide_ricklon/workspaces/npm_cache/contextify/0.0.6/package.json
-verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___cssom.npm
-verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___request.npm
-verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___contextify.npm
-verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___htmlparser.npm
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___htmlparser.npm
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___request.npm
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___cssom.npm
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/cssom
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/htmlparser
+verbose mkdir done: /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___contextify.npm
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/cssom
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/htmlparser
+verbose unpackTarget /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify
 verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/contextify/0.0.6/package.tgz"
 verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/request/2.1.1/package.tgz"
-verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___contextify.npm"
-verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___contextify.npm/package
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify
-verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___contextify.npm/package',
-verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify' ]
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___contextify.npm
-verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___request.npm"
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___contextify.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___contextify.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___contextify.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify' ]
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___contextify.npm
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___request.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___request.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___request.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request' ]
 verbose has wscript [ undefined,
-verbose has wscript   { file: '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify/package.json',
+verbose has wscript   { file: '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify/package.json',
 verbose has wscript     wscript: 
 verbose has wscript      [ '\ndef configure',
 verbose has wscript        '\n',
@@ -771,22 +1030,18 @@ silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.1rc6',
 silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true }
-verbose caching /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify/package.json
+verbose caching /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify/package.json
 verbose loadDefaults contextify@0.0.6
-info into /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify []
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify []
 silly resolved []
-info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify []
-verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify
-info build /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify
-verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify/package.json
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify []
+verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify
+info build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify
+verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify/package.json
 info preinstall contextify@0.0.6
 verbose unsafe-perm in lifecycle true
-verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___request.npm/package
 silly exec sh "-c" "node-waf clean || true; node-waf configure build"
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request
-verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___request.npm/package',
-verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request' ]
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___request.npm
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___request.npm
 silly testEngine { name: 'request',
 silly testEngine   description: 'Simplified HTTP request client.',
 silly testEngine   tags: [ 'http', 'simple', 'util', 'utility' ],
@@ -807,19 +1062,19 @@ silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.1rc6',
 silly testEngine   _nodeVersion: 'v0.4.5',
 silly testEngine   _defaultsLoaded: true }
-verbose caching /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request/package.json
+verbose caching /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request/package.json
 verbose loadDefaults request@2.1.1
-info into /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request []
+info into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request []
 silly resolved []
-info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request []
-verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request
-info build /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request
-verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/request/package.json
+info (resolved) into /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request []
+verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request
+info build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request
+verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/request/package.json
 info preinstall request@2.1.1
 verbose linkStuff [ false,
 verbose linkStuff   false,
 verbose linkStuff   false,
-verbose linkStuff   '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules' ]
+verbose linkStuff   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules' ]
 info linkStuff request@2.1.1
 info linkBins request@2.1.1
 info linkMans request@2.1.1
@@ -844,15 +1099,15 @@ ERR! error installing contextify@0.0.6   pkgid: 'contextify@0.0.6',
 ERR! error installing contextify@0.0.6   stage: 'preinstall',
 ERR! error installing contextify@0.0.6   script: 'node-waf clean || true; node-waf configure build',
 ERR! error installing contextify@0.0.6   pkgname: 'contextify' }
-verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/contextify/package.json
+verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/contextify/package.json
 info preuninstall contextify@0.0.6
 info uninstall contextify@0.0.6
 info unbuild contextify@0.0.6 [ false,
 info unbuild contextify@0.0.6   '/home/ide_ricklon/workspaces/npm_global/node_modules',
-info unbuild contextify@0.0.6   '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules' ]
+info unbuild contextify@0.0.6   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules' ]
 info postuninstall contextify@0.0.6
 info installOne cb contextify@0.0.6
-verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jsdom
+verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom
 ERR! error installing jsdom@0.2.8 { stack: [Getter/Setter],
 ERR! error installing jsdom@0.2.8   arguments: undefined,
 ERR! error installing jsdom@0.2.8   type: undefined,
@@ -862,38 +1117,69 @@ ERR! error installing jsdom@0.2.8   pkgid: 'contextify@0.0.6',
 ERR! error installing jsdom@0.2.8   stage: 'preinstall',
 ERR! error installing jsdom@0.2.8   script: 'node-waf clean || true; node-waf configure build',
 ERR! error installing jsdom@0.2.8   pkgname: 'contextify' }
-verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jsdom/package.json
+verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/package.json
 info preuninstall jsdom@0.2.8
 info uninstall jsdom@0.2.8
 info unbuild jsdom@0.2.8 [ false,
 info unbuild jsdom@0.2.8   '/home/ide_ricklon/workspaces/npm_global/node_modules',
-info unbuild jsdom@0.2.8   '/mnt/ws/users/ricklon/91725/node_modules' ]
+info unbuild jsdom@0.2.8   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules' ]
 info postuninstall jsdom@0.2.8
 verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/cssom/0.2.0/package.tgz"
-verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___cssom.npm"
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___cssom.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___cssom.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/cssom
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___cssom.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/cssom' ]
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___cssom.npm
 ERR! error installing cssom@0.2.0 { stack: [Getter/Setter],
 ERR! error installing cssom@0.2.0   arguments: undefined,
 ERR! error installing cssom@0.2.0   type: undefined,
-ERR! error installing cssom@0.2.0   message: 'ENOENT, No such file or directory \'/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___cssom.npm/package/test/fixtures/\'',
+ERR! error installing cssom@0.2.0   message: 'ENOENT, No such file or directory \'/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/cssom/package.json\'',
 ERR! error installing cssom@0.2.0   errno: 2,
 ERR! error installing cssom@0.2.0   code: 'ENOENT',
-ERR! error installing cssom@0.2.0   path: '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___cssom.npm/package/test/fixtures/' }
+ERR! error installing cssom@0.2.0   path: '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/cssom/package.json' }
 info installOne cb cssom@0.2.0
 verbose success gzip "--decompress" "--stdout" "/home/ide_ricklon/workspaces/npm_cache/htmlparser/1.7.3/package.tgz"
-verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___htmlparser.npm"
-verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___htmlparser.npm/package
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/htmlparser
-verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___htmlparser.npm/package',
-verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/htmlparser' ]
-verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jsdom/node_modules/___htmlparser.npm
+verbose success /opt/local/bin/gtar "-mvxpf" "-" "--no-same-owner" "-C" "/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___htmlparser.npm"
+verbose gunzed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___htmlparser.npm/package
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/htmlparser
+verbose renamed [ '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___htmlparser.npm/package',
+verbose renamed   '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/htmlparser' ]
+verbose rm'ed /mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/___htmlparser.npm
+ERR! error installing htmlparser@1.7.3 { stack: [Getter/Setter],
+ERR! error installing htmlparser@1.7.3   arguments: undefined,
+ERR! error installing htmlparser@1.7.3   type: undefined,
+ERR! error installing htmlparser@1.7.3   message: 'ENOENT, No such file or directory \'/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/htmlparser/package.json\'',
+ERR! error installing htmlparser@1.7.3   errno: 2,
+ERR! error installing htmlparser@1.7.3   code: 'ENOENT',
+ERR! error installing htmlparser@1.7.3   path: '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom/node_modules/htmlparser/package.json' }
+info installOne cb htmlparser@1.7.3
 ERR! error rolling back jsdom@0.2.8 { stack: [Getter/Setter],
 ERR! error rolling back jsdom@0.2.8   arguments: undefined,
 ERR! error rolling back jsdom@0.2.8   type: undefined,
-ERR! error rolling back jsdom@0.2.8   message: 'EEXIST, File exists \'/mnt/ws/users/ricklon/91725/node_modules/jsdom\'',
+ERR! error rolling back jsdom@0.2.8   message: 'EEXIST, File exists \'/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom\'',
 ERR! error rolling back jsdom@0.2.8   errno: 17,
 ERR! error rolling back jsdom@0.2.8   code: 'EEXIST',
-ERR! error rolling back jsdom@0.2.8   path: '/mnt/ws/users/ricklon/91725/node_modules/jsdom' }
+ERR! error rolling back jsdom@0.2.8   path: '/mnt/ws/users/ricklon/91725/node_modules/jquery/node_modules/jsdom' }
 info installOne cb jsdom@0.2.8
+verbose about to build /mnt/ws/users/ricklon/91725/node_modules/jquery
+ERR! error installing jquery@1.6.3 { stack: [Getter/Setter],
+ERR! error installing jquery@1.6.3   arguments: undefined,
+ERR! error installing jquery@1.6.3   type: undefined,
+ERR! error installing jquery@1.6.3   message: 'contextify@0.0.6 preinstall: `node-waf clean || true; node-waf configure build`\n`sh "-c" "node-waf clean || true; node-waf configure build"` failed with 127',
+ERR! error installing jquery@1.6.3   errno: {},
+ERR! error installing jquery@1.6.3   pkgid: 'contextify@0.0.6',
+ERR! error installing jquery@1.6.3   stage: 'preinstall',
+ERR! error installing jquery@1.6.3   script: 'node-waf clean || true; node-waf configure build',
+ERR! error installing jquery@1.6.3   pkgname: 'contextify' }
+verbose from cache /mnt/ws/users/ricklon/91725/node_modules/jquery/package.json
+info preuninstall jquery@1.6.3
+info uninstall jquery@1.6.3
+info unbuild jquery@1.6.3 [ false,
+info unbuild jquery@1.6.3   '/home/ide_ricklon/workspaces/npm_global/node_modules',
+info unbuild jquery@1.6.3   '/mnt/ws/users/ricklon/91725/node_modules' ]
+info postuninstall jquery@1.6.3
+info installOne cb jquery@1.6.3
 ERR! contextify@0.0.6 preinstall: `node-waf clean || true; node-waf configure build`
 ERR! `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 127
 ERR! 
@@ -907,5 +1193,5 @@ ERR!     npm owner ls contextify
 ERR! There is likely additional logging output above.
 ERR! 
 ERR! System SunOS 5.11
-ERR! command "/home/cloud9/c9/support/node-c9-builds-v4/node-c9-sunos" "/home/ide_ricklon/workspaces/npm/bin/npm.js" "install" "jsdom"
+ERR! command "/home/cloud9/c9/support/node-c9-builds-v4/node-c9-sunos" "/home/ide_ricklon/workspaces/npm/bin/npm.js" "install" "jquery"
 verbose exit [ 1, true ]

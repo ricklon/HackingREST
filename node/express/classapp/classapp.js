@@ -9,7 +9,7 @@ var app = express.createServer(
 app.get('/', function(req, res){
   res.send('<h1>index</h1><ul>'
     + '<li>jQuery examples <a href="/hellojquery/hellojquery.html">Hello jQuery</a>.</li>'
-    + '<li>Download <a href="/files/missing.txt">missing.txt</a>.</li>'
+    + '<li>REST examples<a href="/REST/missing.txt">REST Examplest</a>.</li>'
     + '</ul>');
 });    
 
