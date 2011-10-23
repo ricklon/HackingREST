@@ -10,8 +10,82 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="/css/style.css">
+    <link type="text/css" href="/css/trontastic/jquery-ui-1.8.16.custom.css" rel="stylesheet" />    
 
 	<script src="/js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="/js/libs/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/js/libs/jquery-ui-1.8.16.custom.min.js"></script>
+    <style>
+         #slider1 .ui-slider-handle { background: #9FDA58; }
+         #slider2 .ui-slider-handle { background: #9FDA58; }
+         #slider3 .ui-slider-handle { background: #9FDA58; }
+    </style>
+    <script type="text/javascript">
+		$(function(){
+            
+                function update_slider(ui){
+                    //var value = ui.value;
+                    //console.log(value);
+                    var xx = $( "#slider1" ).slider( "value" );
+                    var yy = $( "#slider2" ).slider( "value" );
+                    var zz = $( "#slider3" ).slider( "value" );
+                    console.log("xx:" + xx + ", " + "yy:" + yy +  ", " + "zz:" + zz );      
+                    $("#xxval").text(xx);
+                    $("#yyval").text(yy);
+                    $("#zzval").text(zz);  
+                }
+                
+                function update_thingspeak_local() {
+                    //URI for post: http://api.thingspeak.com/update?key=ZGS9MSQYCROJUWK6&field1=0&field2=2&field3=3
+                    var url = "http://api.thingspeak.com/update";
+                    var key = "ZGS9MSQYCROJUWK6";
+                    var xx = $( "#slider1" ).slider( "value" );
+                    var yy = $( "#slider2" ).slider( "value" );
+                    var zz = $( "#slider3" ).slider( "value" );
+                    
+                    $.ajax({
+                        type: 'POST',
+                        url: url,
+                        data: {"key": key, "field1": xx, "field2": yy, "field3": zz   },
+                        success: function () { successThingspeak(xx,zz,yy); }
+                       // dataType: dataType
+                });
+                    console.log("ThingSpeak Update Complete.");
+                }
+                
+                function successThingspeak (xx, yy, zz) {
+                    console.log("Success: xx:" + xx + ", " + "yy:" + yy +  ", " + "zz:" + zz );      
+                }
+                    
+                // Slider1
+				$('#slider1').slider({
+					min: 0,
+                    max: 255,
+                    slide: function(event, ui){
+    		        setTimeout(update_slider(ui), 10);  
+		            }
+				});
+                    // Slider2
+				$('#slider2').slider({
+    				min: 0,
+                    max: 255,
+                    slide: function(event, ui){
+        	        setTimeout(update_slider(ui), 10);
+                    },
+                    change: function(event, ui) {
+                        update_thingspeak_local();
+                    }
+				});
+                    // Slider3
+				$('#slider3').slider({
+    				min: 0,
+                    max: 255,
+                    slide: function(event, ui){
+        	        setTimeout(update_slider(ui), 10); 
+                    }
+				});
+		});        
+    </script>
 </head>
 <body>
 
@@ -20,18 +94,26 @@
         <h3>ThingSpeak API examples.</h3>
 	</header>
 	<div id="main" role="main">
-<h1>index</h1><ul>
-    <li>jQuery examples <a href="/hellojquery/hellojquery.html">hellojquery.html</a>.</li>
-    <li>REST examples<a href="/REST/missing.txt">REST</a>.</li>
-    </ul>
-		
+    <!-- Slider1 -->
+	<div id="xx" class="sliderdisplay">Slider XX Value:<span id="xxval"></span></div>    
+	<div id="slider1"></div>
+    <!-- Slider2 -->
+    <div id="yy" class="sliderdisplay">Slider YY Value:<span id="yyval"></span></div>
+	<div id="slider2"></div>
+     <!-- Slider3 -->
+    <div id="zz" class="sliderdisplay">Slider ZZ Value: <span id="zzval" /></span></div>
+	<div id="slider3"></div>
 	</div>
 	<footer>
 
 	</footer>
 </div> <!--! end of #container -->
 
+<!-- moved code to top for ease of show code then formatting.
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="/js/libs/jquery-ui-1.8.16.custom.min.js"></script>
+-->
+
 </body>
 </html>
