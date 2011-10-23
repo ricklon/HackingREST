@@ -1,4 +1,8 @@
-var fs = require('fs');
+/*
+* This users preferred method
+* http://nodejs.org/docs/v0.5.10/api/http.html#http.request
+*/
+
 var querystring = require('querystring');
 var http = require('http');
 

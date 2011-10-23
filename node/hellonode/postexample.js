@@ -1,3 +1,8 @@
+/*
+* Use http.request instead of this
+*/
+
+
 //Node example of client post
 //Modified from: http://stackoverflow.com/questions/4579757/how-do-i-create-a-http-client-request-with-a-cookie
 var http = require('http');
