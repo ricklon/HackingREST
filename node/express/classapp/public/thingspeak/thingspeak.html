@@ -63,7 +63,7 @@
 					min: 0,
                     max: 255,
                     slide: function(event, ui){
-    		        setTimeout(update_slider(ui), 10);  
+    		        update_slider(ui);  
 		            }
 				});
                     // Slider2
@@ -71,7 +71,7 @@
     				min: 0,
                     max: 255,
                     slide: function(event, ui){
-        	        setTimeout(update_slider(ui), 10);
+        	        update_slider(ui);
                     },
                     change: function(event, ui) {
                         update_thingspeak_local();
@@ -82,7 +82,7 @@
     				min: 0,
                     max: 255,
                     slide: function(event, ui){
-        	        setTimeout(update_slider(ui), 10); 
+        	        update_slider(ui); 
                     }
 				});
 		});        
