@@ -30,7 +30,7 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Express'
+    title: 'Fubar Labs Presents -- Hacking REST with jQuery'
   });
 });
 if(process.env.C9_PORT) {
