@@ -38,8 +38,8 @@
                 function update_thingspeak_local() {
                     //URI for post: http://api.thingspeak.com/update?key=ZGS9MSQYCROJUWK6&field1=0&field2=2&field3=3
                    // var url = "http://api.thingspeak.com/update";
-	             var url = "http://127.0.0.1:3000/thingspeak/update";
-                    //var url = "http://hackingrest.ricklon.cloud9ide.com/thingspeak/update";
+                    var url = "http://hackingrest.ricklon.cloud9ide.com/thingspeak/update";
+                    
                     var key = "ZGS9MSQYCROJUWK6";
                     var xx = $( "#slider1" ).slider( "value" );
                     var yy = $( "#slider2" ).slider( "value" );
@@ -52,17 +52,13 @@
                         type: 'POST',
                         url: url,
                         data: {"key": key, "field1": xx, "field2": yy, "field3": zz   },
-                        success: function (data) { successThingspeak(data, xx, yy, zz); },
-			error: function (data) { error(data);}
+                        success: function (data) { successThingspeak(data, xx, yy, zz); }
                        // dataType: dataType
                     });
                     
                     console.log("ThingSpeak Update Complete.");
+                    console.log($.get("http://api.thingspeak.com/channels/1228/feed/last.json"));
                 }
-		
-		function error(data) {
-			console.log("Error: " + data);
-		}
                 
                 function successThingspeak (data, xx, yy, zz) {
                     console.log(data);
@@ -76,7 +72,7 @@
                     slide: function(event, ui){
     		        update_slider(ui);  
 		            },
-		    change: function(event, ui) {
+                    change: function(event, ui) {
                         update_thingspeak_local();
                     }
 				});
@@ -98,7 +94,7 @@
                     slide: function(event, ui){
         	        update_slider(ui); 
                     },
- 		    change: function(event, ui) {
+                    change: function(event, ui) {
                         update_thingspeak_local();
                     }
 				});
@@ -122,6 +118,10 @@
     <div id="zz" class="sliderdisplay">Slider ZZ Value: <span id="zzval" /></span></div>
 	<div id="slider3"></div>
 	</div>
+    <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1228/charts/1?timescale=1"></iframe>
+    <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1228/charts/2?timescale=1"></iframe>
+    <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1228/charts/3?timescale=1"></iframe>
+    
 	<footer>
 
 	</footer>
