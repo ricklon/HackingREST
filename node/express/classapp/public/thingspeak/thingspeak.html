@@ -57,8 +57,12 @@
                     });
                     
                     console.log("ThingSpeak Update Complete.");
-                    console.log($.get("http://api.thingspeak.com/channels/1228/feed/last.json"));
+                    $.getJSON("http://api.thingspeak.com/channels/1228/feed/last.json?callback=?", function(data) {
+                        console.log(data);
+                        console.log("Last Entry: created_at: " + data.created_at + "entry_id: " + data.entry_id +"xx:" + data.field1 + ", " + "yy:" + data.field2 +  ", " + "zz:" + data.field3 );      
+                    });
                 }
+            
                 
                 function successThingspeak (data, xx, yy, zz) {
                     console.log(data);
