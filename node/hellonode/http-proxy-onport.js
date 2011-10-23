@@ -10,7 +10,7 @@ var PORT = 8000;
 //
 // This listens on port 8000 for incoming HTTP requests 
 // and proxies them to port 9000
-httpProxy.createServer(80, 'api.thingspeak.com').listen(PORT);
+httpProxy.createServer(80, 'butterflysmack.com').listen(PORT);
 
 //
 // ...and a simple http server to show us our request back.
